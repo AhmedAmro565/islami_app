@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:islami_app/screens/quran_details.dart';
+import 'package:islami_app/screens/quran_details_screen.dart';
 import 'package:islami_app/tabs/radio_tab/sura_name.dart';
 import 'package:islami_app/widgets.dart';
 
@@ -65,16 +65,3 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
   }
 }
 
-// body: Stack(
-//             children: [
-//               Container(
-//                 height: 650,
-//                 margin: EdgeInsets.all(40),
-//                 decoration: BoxDecoration(
-//                   color: Color.fromARGB(255, 220, 220, 220),
-//                   borderRadius: BorderRadius.all(Radius.circular(50)),
-//                 ),
-//               ),
-
-//             ],
-//           ),

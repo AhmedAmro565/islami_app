@@ -25,7 +25,7 @@ class _SebhaTabState extends State<SebhaTab> {
                 style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
               ),
               SizedBox(
-                height: 15,
+                height: 10,
               ),
               Container(
                 decoration: BoxDecoration(
@@ -37,9 +37,8 @@ class _SebhaTabState extends State<SebhaTab> {
                     child: Text('$tasbehCounter',
                         style: TextStyle(color: Colors.black, fontSize: 25))),
               ),
-              SizedBox(
-                height: 30,
-              ),
+              SizedBox(height: 5,),
+
               InkWell(
                 onTap: () {
                   setState(() {
@@ -48,7 +47,7 @@ class _SebhaTabState extends State<SebhaTab> {
                 },
                 child: Container(
                   padding: EdgeInsets.all(10),
-                  width: 130,
+                  width: 120,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(25),
                       color: Color(0xFFB7935F)),
@@ -59,7 +58,7 @@ class _SebhaTabState extends State<SebhaTab> {
                   )),
                 ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 10),
               InkWell(
                 onTap: () {
                   setState(() {
