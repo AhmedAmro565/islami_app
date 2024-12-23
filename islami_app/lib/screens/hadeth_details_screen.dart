@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:islami_app/tabs/hadeth_tab/hadeth.dart';
+import 'package:islami_app/tabs/hadeth_tab/hadeth_tab.dart';
 import 'package:islami_app/widgets.dart';
 
 class HadethDetailsScreen extends StatelessWidget {
