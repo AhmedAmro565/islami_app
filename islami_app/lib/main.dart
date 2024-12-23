@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islami_app/screens/hadeth_details_screen.dart';
 import 'package:islami_app/screens/home_screen.dart';
 import 'package:islami_app/screens/splash_screen.dart';
 import 'package:islami_app/screens/sura_details_screen.dart';
@@ -27,10 +28,11 @@ class IslamiApp extends StatelessWidget {
             selectedIconTheme: IconThemeData(size: 45),
             unselectedIconTheme: IconThemeData(size: 32)),
       ),
-      routes: {
+      routes: <String, WidgetBuilder>{
         HomeScreen.routeName: (context) => HomeScreen(),
         SplashScreen.routeName: (context) => SplashScreen(),
         SuraDetailsScreen.routeName: (context) => SuraDetailsScreen(),
+        HadethDetailsScreen.routeName:(context) => HadethDetailsScreen(),
       },
       initialRoute: HomeScreen.routeName,
     );

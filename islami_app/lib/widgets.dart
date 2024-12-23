@@ -16,6 +16,8 @@ class Images {
   static String hadeth = 'assets/images/hadeth.png';
   static String quranHeader = 'assets/images/quran_header_icon.png';
   static String sebhaHeader = 'assets/images/sebha_header.png';
+  static String hadethHeader = 'assets/images/hadith_header.png';
+
 }
 
 class Strings {

@@ -40,23 +40,23 @@ class _HomeScreenState extends State<HomeScreen> {
           items: [
             BottomNavigationBarItem(
               backgroundColor: Color(0xFFB7935F),
-              icon: ImageIcon(AssetImage(Images.radio)),
-              label: '',
+              icon: ImageIcon(AssetImage(Images.quran)),
+              label: 'Quran',
             ),
             BottomNavigationBarItem(
               backgroundColor: Color(0xFFB7935F),
               icon: ImageIcon(AssetImage(Images.sebha)),
-              label: '',
+              label: 'Sebha',
             ),
             BottomNavigationBarItem(
               backgroundColor: Color(0xFFB7935F),
               icon: ImageIcon(AssetImage(Images.hadeth)),
-              label: '',
+              label: 'Hadeth',
             ),
             BottomNavigationBarItem(
               backgroundColor: Color(0xFFB7935F),
-              icon: ImageIcon(AssetImage(Images.quran)),
-              label: '',
+              icon: ImageIcon(AssetImage(Images.radio)),
+              label: 'Radio',
             ),
           ],
         ),
