@@ -3,9 +3,8 @@ import 'package:islami_app/tabs/hadeth_tab/hadeth_tab.dart';
 import 'package:islami_app/tabs/quran_tab/quran.dart';
 import 'package:islami_app/tabs/radio_tab/radio.dart';
 import 'package:islami_app/tabs/sebha_tab/sebha.dart';
+import 'package:islami_app/tabs/settings_tab/settings_tab.dart';
 import 'package:islami_app/widgets.dart';
-
-import '../tabs/settings_tab/settings_tab.dart';
 
 class HomeScreen extends StatefulWidget {
   static String routeName = 'home-screen';
