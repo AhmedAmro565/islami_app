@@ -33,6 +33,7 @@ class IslamiApp extends StatelessWidget {
         SplashScreen.routeName: (context) => SplashScreen(),
         SuraDetailsScreen.routeName: (context) => SuraDetailsScreen(),
         HadethDetailsScreen.routeName:(context) => HadethDetailsScreen(),
+
       },
       initialRoute: HomeScreen.routeName,
     );

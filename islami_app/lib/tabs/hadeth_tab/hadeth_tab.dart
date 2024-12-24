@@ -41,7 +41,7 @@ class _HadethTabState extends State<HadethTab> {
                       itemBuilder: (context, index) =>
                           HadethTitleWideget(hadeth: ahadeth[index]),
                       separatorBuilder: (context, index) => Container(
-                            margin: EdgeInsets.symmetric(horizontal: 45),
+                            margin: EdgeInsets.symmetric(horizontal: 45.1),
                             color: Color(0xFFB7935F),
                             width: double.infinity,
                             height: 2,
