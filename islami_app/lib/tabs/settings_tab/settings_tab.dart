@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app/tabs/settings_tab/Langauge_bottom_sheet.dart';
 import 'package:islami_app/tabs/settings_tab/Theme_bottom_sheet.dart';
-import 'package:islami_app/widgets.dart';
 
 class SettingsTab extends StatefulWidget {
+  const SettingsTab({super.key});
+
   @override
   State<SettingsTab> createState() => _SettingsTabState();
 }
@@ -17,8 +18,8 @@ class _SettingsTabState extends State<SettingsTab> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            'Theme',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+            "Theme",
+            style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
           ),
           InkWell(
             onTap: () {
@@ -27,18 +28,23 @@ class _SettingsTabState extends State<SettingsTab> {
             child: Container(
               padding: EdgeInsets.all(20),
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(22),
-                  border: Border.all(color: Color(0XFFB7935F), width: 3)),
-              child: Text('Light',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+                border: Border.all(color: Color(0XFFB7935F), width: 2),
+                borderRadius: BorderRadius.circular(
+                  22,
+                ),
+              ),
+              child: Text(
+                "Light",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
             ),
           ),
           SizedBox(
             height: 20,
           ),
           Text(
-            'Language',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+            "Language",
+            style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
           ),
           InkWell(
             onTap: () {
@@ -47,10 +53,15 @@ class _SettingsTabState extends State<SettingsTab> {
             child: Container(
               padding: EdgeInsets.all(20),
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(22),
-                  border: Border.all(color: Color(0XFFB7935F), width: 3)),
-              child: Text('English',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+                border: Border.all(color: Color(0XFFB7935F), width: 2),
+                borderRadius: BorderRadius.circular(
+                  22,
+                ),
+              ),
+              child: Text(
+                "English",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
             ),
           ),
         ],
@@ -60,11 +71,13 @@ class _SettingsTabState extends State<SettingsTab> {
 
   void showThemeBottomSheet() {
     showModalBottomSheet(
-        context: context, builder: (context) => ThemeBottomSheet());
+        context: context,
+        builder: (context) => ThemeBottomSheet());
   }
 
   void showLanguageBottomSheet() {
     showModalBottomSheet(
-        context: context, builder: (context) => LangaugeBottomSheet());
+        context: context,
+        builder: (context) => LangaugeBottomSheet());
   }
 }

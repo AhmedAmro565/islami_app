@@ -21,7 +21,6 @@ class _HomeScreenState extends State<HomeScreen> {
     SebhaTab(),
     HadethTab(),
     QuranTab(),
-    SettingsTab(),
   ];
 
   @override
@@ -59,11 +58,6 @@ class _HomeScreenState extends State<HomeScreen> {
               backgroundColor: Color(0xFFB7935F),
               icon: ImageIcon(AssetImage(Images.radio)),
               label: 'Radio',
-            ),
-            BottomNavigationBarItem(
-              backgroundColor: Color(0xFFB7935F),
-              icon: Icon(Icons.settings),
-              label: 'Settings',
             ),
           ],
         ),
