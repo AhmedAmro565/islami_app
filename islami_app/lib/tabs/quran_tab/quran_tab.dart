@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:islami_app/tabs/radio_tab/sura_name.dart';
+import 'package:islami_app/tabs/quran_tab/sura_name.dart';
 import 'package:islami_app/widgets.dart';
 
 // ignore: must_be_immutable
-class RadioTab extends StatelessWidget {
+class QuranTab extends StatelessWidget {
   List<String> suraNames = [
     "الفاتحه",
     "البقرة",
@@ -133,13 +133,10 @@ class RadioTab extends StatelessWidget {
               margin: EdgeInsets.symmetric(horizontal: 40),
               height: 2,
               width: double.infinity,
-              color: Color(0xFFB7935F),
+              color: Theme.of(context).dividerColor,
             ),
             itemBuilder: (context, index) => SuraName(
-                suraArgs: SuraArgs(
-              title: suraNames[index],
-              index: index,
-            )),
+                suraArgs: SuraArgs(title: suraNames[index], index: index)),
             itemCount: suraNames.length,
           ),
         )

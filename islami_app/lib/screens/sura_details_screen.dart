@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:islami_app/screens/quran_details.dart';
-import 'package:islami_app/tabs/radio_tab/sura_name.dart';
+import 'package:islami_app/screens/quran_details_screen.dart';
+import 'package:islami_app/styles/my_theme_data.dart';
+import 'package:islami_app/tabs/quran_tab/sura_name.dart';
 import 'package:islami_app/widgets.dart';
 
 class SuraDetailsScreen extends StatefulWidget {
@@ -24,7 +25,9 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
             decoration: BoxDecoration(
                 image: DecorationImage(
               image: AssetImage(
-                Images.ImagePath_2,
+                  MyThemeData.isDarkSelected
+                      ? 'assets/images/home_dark_background.png'
+                      : 'assets/images/default_bg@2x.png'
               ),
               fit: BoxFit.fill,
             )),
@@ -33,11 +36,11 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
                 margin: EdgeInsets.all(26),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(40)),
-                color: Color.fromARGB(255, 247, 247, 247),
+                color: Theme.of(context).cardColor,
                 child: ListView.separated(
                   separatorBuilder: (context, index) => Container(
                     margin: EdgeInsets.symmetric(horizontal: 32),
-                    color: Color(0xFFB7935F),
+                    color: Theme.of(context).dividerColor,
                     width: double.infinity,
                     height: 2,
                   ),
@@ -65,16 +68,3 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
   }
 }
 
-// body: Stack(
-//             children: [
-//               Container(
-//                 height: 650,
-//                 margin: EdgeInsets.all(40),
-//                 decoration: BoxDecoration(
-//                   color: Color.fromARGB(255, 220, 220, 220),
-//                   borderRadius: BorderRadius.all(Radius.circular(50)),
-//                 ),
-//               ),
-
-//             ],
-//           ),
