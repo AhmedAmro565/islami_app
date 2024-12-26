@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class QuranTab extends StatelessWidget {
+class RadioTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(

@@ -19,7 +19,7 @@ class _SettingsTabState extends State<SettingsTab> {
         children: [
           Text(
             "Theme",
-            style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+            style: Theme.of(context).textTheme.titleMedium,
           ),
           InkWell(
             onTap: () {
@@ -35,7 +35,7 @@ class _SettingsTabState extends State<SettingsTab> {
               ),
               child: Text(
                 "Light",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style: Theme.of(context).textTheme.titleMedium,
               ),
             ),
           ),
@@ -44,7 +44,7 @@ class _SettingsTabState extends State<SettingsTab> {
           ),
           Text(
             "Language",
-            style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+            style: Theme.of(context).textTheme.titleMedium,
           ),
           InkWell(
             onTap: () {
@@ -60,7 +60,7 @@ class _SettingsTabState extends State<SettingsTab> {
               ),
               child: Text(
                 "English",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style: Theme.of(context).textTheme.titleMedium,
               ),
             ),
           ),

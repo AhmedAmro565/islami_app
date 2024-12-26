@@ -18,7 +18,7 @@ class _HadethTabState extends State<HadethTab> {
     return ahadeth.isEmpty
         ? Center(child: CircularProgressIndicator())
         : Container(
-            margin: EdgeInsets.all(15),
+            margin: EdgeInsets.all(10),
             child: Column(
               children: [
                 Image.asset(Images.hadethHeader),
@@ -30,11 +30,11 @@ class _HadethTabState extends State<HadethTab> {
                     decoration: BoxDecoration(
                         border: Border.symmetric(
                             horizontal: BorderSide(
-                                width: 2, color: Color(0xFFB7935F)))),
+                                width: 2, color: Theme.of(context).dividerColor))),
                     child: Text(
-                      'الأحاديث',
+                      '(  الأحاديث  )',
                       style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+                      Theme.of(context).textTheme.headlineMedium,
                     )),
                 Expanded(
                   child: ListView.separated(
@@ -42,7 +42,7 @@ class _HadethTabState extends State<HadethTab> {
                           HadethTitleWideget(hadeth: ahadeth[index]),
                       separatorBuilder: (context, index) => Container(
                             margin: EdgeInsets.symmetric(horizontal: 45.1),
-                            color: Color(0xFFB7935F),
+                            color: Theme.of(context).dividerColor,
                             width: double.infinity,
                             height: 2,
                           ),

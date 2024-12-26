@@ -22,7 +22,7 @@ class _SebhaTabState extends State<SebhaTab> {
                   child: Image.asset(Images.sebhaHeader)),
               Text(
                 'عدد التسبيحات',
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                style: Theme.of(context).textTheme.headlineMedium,
               ),
               SizedBox(
                 height: 10,

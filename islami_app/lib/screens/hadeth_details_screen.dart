@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islami_app/styles/my_theme_data.dart';
 import 'package:islami_app/tabs/hadeth_tab/hadeth_tab.dart';
 import 'package:islami_app/widgets.dart';
 
@@ -11,7 +12,9 @@ class HadethDetailsScreen extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage(Images.ImagePath_2),
+          image: AssetImage(MyThemeData.isDarkSelected
+              ? 'assets/images/home_dark_background.png'
+              : 'assets/images/default_bg@2x.png'),
           fit: BoxFit.fill,
         ),
       ),
@@ -22,6 +25,7 @@ class HadethDetailsScreen extends StatelessWidget {
           child: Padding(
             padding:  EdgeInsets.all(12),
             child: Card(
+              color: Theme.of(context).cardColor,
 
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(32),
@@ -37,14 +41,11 @@ class HadethDetailsScreen extends StatelessWidget {
                       width: double.infinity,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(40),
-                          color: Color(0xFFDCD6CE)),
+                          color: Color(0xFF7C6443)),
                       child: Center(
                         child: Text(
                           args.title,
-                          style: TextStyle(
-                              fontSize: 26,
-                              fontWeight: FontWeight.bold,
-                              ),
+                          style: Theme.of(context).textTheme.headlineMedium,
                         ),
                       ),
                     ),
@@ -52,11 +53,7 @@ class HadethDetailsScreen extends StatelessWidget {
                     Text(
                       args.content,
                       textDirection: TextDirection.rtl,
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        height: 1.5, // Line height for better readability
-                      ),
+                      style: Theme.of(context).textTheme.bodyMedium,
                     ),
                   ],
                 ),
