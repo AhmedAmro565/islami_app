@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 class MyThemeData {
-  static Color lightPrimaryColor = Color(0XFFB7935F);
-  static Color darkPrimaryColor = Color(0XFF141A2E);
-  static Color lightDividerColor = Color(0XFFB7935F);
-  static Color darkDividerColor = Color(0XFFFACC1D);
+  static Color lightPrimaryColor = const Color(0XFFB7935F);
+  static Color darkPrimaryColor = const Color(0XFF141A2E);
+  static Color lightDividerColor = const Color(0XFFB7935F);
+  static Color darkDividerColor = const Color(0XFFFACC1D);
   static bool isDarkSelected = true;
 
   static ThemeData lightTheme = ThemeData(
-    textTheme: TextTheme(
+    textTheme: const TextTheme(
       headlineMedium: TextStyle(
         fontSize: 25,
         fontWeight: FontWeight.w600,
@@ -23,7 +23,7 @@ class MyThemeData {
     dividerColor: lightDividerColor,
     primaryColor: lightPrimaryColor,
     scaffoldBackgroundColor: Colors.transparent,
-    appBarTheme: AppBarTheme(
+    appBarTheme: const AppBarTheme(
       iconTheme: IconThemeData(color: Colors.black),
       centerTitle: true,
       titleTextStyle: TextStyle(
@@ -33,7 +33,7 @@ class MyThemeData {
       ),
       color: Colors.transparent,
     ),
-    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       unselectedItemColor: Colors.white,
       selectedItemColor: Colors.black,
       selectedIconTheme: IconThemeData(size: 45),
@@ -42,7 +42,7 @@ class MyThemeData {
   );
 
   static ThemeData darkTheme = ThemeData(
-    textTheme: TextTheme(
+    textTheme: const TextTheme(
       headlineMedium: TextStyle(
         fontSize: 28,
         fontWeight: FontWeight.w600,
@@ -57,7 +57,7 @@ class MyThemeData {
     cardColor: darkPrimaryColor,
     primaryColor: darkPrimaryColor,
     scaffoldBackgroundColor: Colors.transparent,
-    appBarTheme: AppBarTheme(
+    appBarTheme: const AppBarTheme(
       iconTheme: IconThemeData(color: Colors.white),
       centerTitle: true,
       titleTextStyle: TextStyle(
@@ -67,7 +67,7 @@ class MyThemeData {
       ),
       color: Colors.transparent,
     ),
-    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       unselectedItemColor: Colors.white,
       selectedItemColor: Color(0XFFFACC1D),
       selectedIconTheme: IconThemeData(size: 45),
