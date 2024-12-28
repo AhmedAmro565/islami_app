@@ -6,6 +6,7 @@ import 'package:islami_app/tabs/quran_tab/quran_tab.dart';
 import 'package:islami_app/tabs/sebha_tab/sebha.dart';
 import 'package:islami_app/tabs/settings_tab/settings_tab.dart';
 import 'package:islami_app/widgets.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class HomeScreen extends StatefulWidget {
   static String routeName = 'home-screen';
@@ -58,28 +59,29 @@ class _HomeScreenState extends State<HomeScreen> {
               BottomNavigationBarItem(
                 backgroundColor: Theme.of(context).primaryColor,
                 icon: ImageIcon(AssetImage(Images.quran)),
-                label: 'Quran',
+                label: AppLocalizations.of(context)!.quran_tab,
               ),
               BottomNavigationBarItem(
                 backgroundColor: Theme.of(context).primaryColor,
                 icon: ImageIcon(AssetImage(Images.sebha)),
-                label: 'Sebha',
+                label: AppLocalizations.of(context)!.tasbeh_tab,
               ),
               BottomNavigationBarItem(
                 backgroundColor: Theme.of(context).primaryColor,
                 icon: ImageIcon(AssetImage(Images.hadeth)),
-                label: 'Hadeth',
+                label: AppLocalizations.of(context)!.hadeth_tab,
               ),
               BottomNavigationBarItem(
                 backgroundColor: Theme.of(context).primaryColor,
                 icon: ImageIcon(AssetImage(Images.radio)),
-                label: 'Radio',
+                label: AppLocalizations.of(context)!.radio_tab,
               ),
               BottomNavigationBarItem(
                 backgroundColor: Theme.of(context).primaryColor,
                 icon: Icon(Icons.settings),
-                label: 'Settings',
+                label:AppLocalizations.of(context)!.settings_tab,  // Access localized value here
               ),
+
             ],
           ),
         ),
