@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 PreferredSizeWidget AppBar_1() {
   return AppBar(
-    title: Text(Strings.MainTitle,),
+    title: Text(
+      Strings.MainTitle,
+    ),
   );
 }
 
@@ -38,13 +41,9 @@ Widget getUnSelectedItem(String text) {
 }
 
 class Images {
-
-
-
-  static String ImagePath_1 = 'assets/images/islami_splash_screen.jpg';
-  static String ImagePath_2 = 'assets/images/default_bg@2x.png';
-  static String ImagePath_3 = 'assets/images/home_dark_background.png';
-
+  static String SplashScreen = 'assets/images/islami_splash_screen.jpg';
+  static String LightBackGround = 'assets/images/default_bg@2x.png';
+  static String DarkBackGround = 'assets/images/home_dark_background.png';
 
   static String quran = 'assets/images/quran.png';
   static String radio = 'assets/images/radio.png';

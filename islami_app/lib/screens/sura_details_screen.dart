@@ -4,6 +4,9 @@ import 'package:islami_app/screens/quran_details_screen.dart';
 import 'package:islami_app/styles/my_theme_data.dart';
 import 'package:islami_app/tabs/quran_tab/sura_name.dart';
 import 'package:islami_app/widgets.dart';
+import 'package:provider/provider.dart';
+
+import '../providers/settings_provider.dart';
 
 class SuraDetailsScreen extends StatefulWidget {
   static String routeName = 'suraNames-screen';
@@ -17,6 +20,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    var settingsprovider = Provider.of<SettingProvider>(context);
     var args = ModalRoute.of(context)?.settings.arguments as SuraArgs;
     verses.isEmpty ? readQuranFile(args.index) : null;
     return verses.isEmpty
@@ -24,11 +28,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
         : Container(
             decoration: BoxDecoration(
                 image: DecorationImage(
-              image: AssetImage(
-                  MyThemeData.isDarkSelected
-                      ? 'assets/images/home_dark_background.png'
-                      : 'assets/images/default_bg@2x.png'
-              ),
+              image: AssetImage(settingsprovider.getBackGround()),
               fit: BoxFit.fill,
             )),
             child: Scaffold(
@@ -67,4 +67,3 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
     setState(() {});
   }
 }
-
