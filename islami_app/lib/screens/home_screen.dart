@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app/styles/my_theme_data.dart';
 import 'package:islami_app/tabs/hadeth_tab/hadeth_tab.dart';
-import 'package:islami_app/tabs/radio_tab/radio_tab.dart';
+
 import 'package:islami_app/tabs/quran_tab/quran_tab.dart';
 import 'package:islami_app/tabs/sebha_tab/sebha.dart';
 import 'package:islami_app/tabs/settings_tab/settings_tab.dart';
@@ -25,7 +25,6 @@ class _HomeScreenState extends State<HomeScreen> {
     QuranTab(),
     SebhaTab(),
     HadethTab(),
-    RadioTab(),
     SettingsTab(),
   ];
 
@@ -73,11 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 icon: ImageIcon(AssetImage(Images.hadeth)),
                 label: AppLocalizations.of(context)!.hadeth_tab,
               ),
-              BottomNavigationBarItem(
-                backgroundColor: Theme.of(context).primaryColor,
-                icon: ImageIcon(AssetImage(Images.radio)),
-                label: AppLocalizations.of(context)!.radio_tab,
-              ),
+
               BottomNavigationBarItem(
                 backgroundColor: Theme.of(context).primaryColor,
                 icon: Icon(Icons.settings),
