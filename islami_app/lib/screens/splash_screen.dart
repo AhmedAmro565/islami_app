@@ -3,6 +3,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:islami_app/screens/home_screen.dart';
 import 'package:islami_app/widgets.dart';
+import 'package:provider/provider.dart';
+
+import '../providers/settings_provider.dart';
 
 class SplashScreen extends StatefulWidget {
   static String routeName = 'splash-screen';
@@ -21,8 +24,9 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   Widget build(BuildContext context) {
+    var settingsprovider = Provider.of<SettingProvider>(context);
     return Image.asset(
-      Images.ImagePath_1,
+      Images.SplashScreen,
       fit: BoxFit.fill,
     );
   }
